@@ -1,0 +1,27 @@
+.nav
+	&__list
+		display: flex
+	&__item
+		padding: 0 12px
+
+
+@media #{$tablet}
+	.nav
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		z-index: 1000
+		&.active
+			padding-top: 20px
+			.nav
+				&__list
+					display: flex
+					flex-wrap: wrap
+					background-color: rgba(255, 255, 255, .7)
+				&__item
+					width: 100%
+					text-align: center
+					padding-top: 20px
+		&__list
+			display: none
